@@ -1,0 +1,12 @@
+export const SOCKET_CONFIG = {
+  PORT: process.env.NEXT_PUBLIC_WS_PORT || '3001',
+  RECONNECTION_ATTEMPTS: 5,
+  RECONNECTION_DELAY: 1000,
+} as const;
+
+export const CANVAS_CONFIG = {
+  WIDTH: 800,
+  HEIGHT: 600,
+  DEFAULT_COLOR: '#000000',
+  DEFAULT_LINE_WIDTH: 2,
+} as const;
